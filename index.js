@@ -20,3 +20,7 @@ app.listen(port, ( req, res ) => {
     console.log(`running ok on port ${port}`)
     connectDB();
 })
+
+app.get('/', (req, res) => {
+    res.send("Hello World");
+})
