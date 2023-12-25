@@ -14,7 +14,7 @@ app.use('/api/users', userRoute);
 app.use('/api/chats', chatRoute);
 app.use('/api/messages', messageRoute);
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 app.listen(port, ( req, res ) => {
     console.log(`running ok on port ${port}`)
